@@ -10,6 +10,7 @@ public class Login : MonoBehaviour
 
     public RegisterPanel RegisterUI;
     public LoginPanel LoginUI;
+    public LobbyMessageModal Modal;
 
     void Start() {
         RegisterUI.gameObject.SetActive(false);

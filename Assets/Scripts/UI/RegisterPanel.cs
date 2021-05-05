@@ -9,6 +9,12 @@ public class RegisterPanel : MonoBehaviour
     public InputField Password;
     public InputField Username;
 
+    Login parent;
+
+    void Awake() {
+        parent = GetComponentInParent<Login>();
+    }
+
     public void Register() {
         var req = new PlayFab.ClientModels.RegisterPlayFabUserRequest {
             Username = Username.text,
@@ -20,11 +26,12 @@ public class RegisterPanel : MonoBehaviour
     }
 
     void OnRegisterSuccess(PlayFab.ClientModels.RegisterPlayFabUserResult e) {
+        parent.Modal.Show(e.SessionTicket, false, true);
         GetComponentInParent<Login>().gameObject.SetActive(false);
     }
 
     void OnRegisterFailed(PlayFab.PlayFabError e) {
-        Debug.LogError(e);
+        parent.Modal.Show(e.ErrorMessage, false, true);
         Application.Quit();
     }
 }
