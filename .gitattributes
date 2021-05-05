@@ -1,0 +1,4 @@
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.dbg.so filter=lfs diff=lfs merge=lfs -text
+*.sym.so filter=lfs diff=lfs merge=lfs -text
+fea9ee138d4a84d90a0c3f187fb3cd8a filter=lfs diff=lfs merge=lfs -text
