@@ -26,13 +26,13 @@ public class Login : MonoBehaviour
         RegisterUI.Register();
     }
 
-    public void LogIn() {
+    public void LogIn(bool withGoogle) {
         if (!LoginUI.gameObject.activeSelf) {
             Toggle();
             return;
         }
 
-        LoginUI.LogIn(ID);
+        LoginUI.LogIn(ID, withGoogle);
     }
 
     void Toggle() {

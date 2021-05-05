@@ -26,7 +26,6 @@ public class RegisterPanel : MonoBehaviour
     }
 
     void OnRegisterSuccess(PlayFab.ClientModels.RegisterPlayFabUserResult e) {
-        parent.Modal.Show(e.SessionTicket, false, true);
         GetComponentInParent<Login>().gameObject.SetActive(false);
     }
 
@@ -34,4 +33,5 @@ public class RegisterPanel : MonoBehaviour
         parent.Modal.Show(e.ErrorMessage, false, true);
         Application.Quit();
     }
+
 }
