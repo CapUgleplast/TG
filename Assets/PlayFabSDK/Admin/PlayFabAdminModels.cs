@@ -2475,6 +2475,7 @@ namespace PlayFab.AdminModels
         TitleNotEnabledForParty,
         PartyVersionNotFound,
         MultiplayerServerBuildReferencedByMatchmakingQueue,
+        MultiplayerServerBuildReferencedByBuildAlias,
         ExperimentationExperimentStopped,
         ExperimentationExperimentRunning,
         ExperimentationExperimentNotFound,
@@ -2512,6 +2513,8 @@ namespace PlayFab.AdminModels
         UpdateSegmentRateLimitExceeded,
         GetSegmentsRateLimitExceeded,
         AsyncExportNotInFlight,
+        AsyncExportNotFound,
+        AsyncExportRateLimitExceeded,
         SnapshotNotFound,
         InventoryApiNotImplemented
     }

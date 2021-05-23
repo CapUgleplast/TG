@@ -2022,6 +2022,7 @@ namespace PlayFab.ServerModels
         TitleNotEnabledForParty,
         PartyVersionNotFound,
         MultiplayerServerBuildReferencedByMatchmakingQueue,
+        MultiplayerServerBuildReferencedByBuildAlias,
         ExperimentationExperimentStopped,
         ExperimentationExperimentRunning,
         ExperimentationExperimentNotFound,
@@ -2059,6 +2060,8 @@ namespace PlayFab.ServerModels
         UpdateSegmentRateLimitExceeded,
         GetSegmentsRateLimitExceeded,
         AsyncExportNotInFlight,
+        AsyncExportNotFound,
+        AsyncExportRateLimitExceeded,
         SnapshotNotFound,
         InventoryApiNotImplemented
     }

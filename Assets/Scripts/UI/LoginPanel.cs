@@ -22,7 +22,7 @@ public class LoginPanel : MonoBehaviour
             Social.localUser.Authenticate((bool success) => {
 
                 if(success) {
-                    var serverAuthCode = PlayGamesPlatform.Instance.GetServerAuthCode();
+                    var serverAuthCode =  PlayGamesPlatform.Instance.GetServerAuthCode();
                     Debug.Log("Server Auth Code: " + serverAuthCode);
 
                     PlayFabClientAPI.LoginWithGoogleAccount(new LoginWithGoogleAccountRequest() {

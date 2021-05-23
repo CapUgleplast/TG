@@ -597,6 +597,7 @@ namespace PlayFab
         TitleNotEnabledForParty = 6000,
         PartyVersionNotFound = 6001,
         MultiplayerServerBuildReferencedByMatchmakingQueue = 6002,
+        MultiplayerServerBuildReferencedByBuildAlias = 6003,
         ExperimentationExperimentStopped = 7000,
         ExperimentationExperimentRunning = 7001,
         ExperimentationExperimentNotFound = 7002,
@@ -634,6 +635,8 @@ namespace PlayFab
         UpdateSegmentRateLimitExceeded = 10009,
         GetSegmentsRateLimitExceeded = 10010,
         AsyncExportNotInFlight = 10011,
+        AsyncExportNotFound = 10012,
+        AsyncExportRateLimitExceeded = 10013,
         SnapshotNotFound = 11000,
         InventoryApiNotImplemented = 12000
     }
